@@ -1,1 +1,3 @@
-# techdegree-project-6
+### Project instructions
+
+https://teamtreehouse.com/projects/interactive-video-player
