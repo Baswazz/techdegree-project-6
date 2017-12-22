@@ -2,10 +2,15 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  color: #000;
 }
 
-.hightlight {
-	color: red;
+.main {
+
+}
+
+.highlight {
+	color: #ffad33;
 }
 
 @media (min-width: 768px) {
