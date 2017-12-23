@@ -8,7 +8,8 @@ $('video').mediaelementplayer({
 const video   = document.getElementsByTagName('video')[0];
 const caption = document.querySelectorAll('p.caption span');
 
-const captions = () => {
+// Listen for time updates in the video
+video.addEventListener('timeupdate', () => {
 	// Loop through the caption items
 	for (let i = 0; i < caption.length; i += 1) {
 		let startTime = parseFloat(caption[i].dataset.start);
@@ -27,7 +28,4 @@ const captions = () => {
 			video.play();
 		});
 	}
-}
-
-// Listen for time updates in the video
-video.addEventListener('timeupdate', captions());
+});
